@@ -1,7 +1,51 @@
-params:
-- dvclive/params.yaml
-metrics:
-- dvclive/metrics.json
-plots:
-- dvclive/plots/metrics:
-    x: step
+#params:
+#- dvclive/params.yaml
+#metrics:
+#- dvclive/metrics.json
+#plots:
+#- dvclive/plots/metrics:
+#    x: step
+
+stages:
+  data_ingestion:
+    cmd: python src/data_injestion.py # cmd --> commands
+    deps:
+    - src/data_injestion.py            # deps --> dependencies
+    #params:
+    #- data_ingestion.test_size         # paramaters
+    outs:
+    - data/raw                         # outs -- > output.
+  data_preprocessing:
+    cmd: python src/data_preprocessing.py
+    deps:
+    - data/raw
+    - src/data_preprocessing.py
+    outs:
+    - data/interim
+  feature_engineering:
+    cmd: python src/Feature_eng.py
+    deps:
+    - data/interim
+    - src/Feature_eng.py
+    #params:
+    #- feature_engineering.max_features
+    outs:
+    - data/processed
+  model_building:
+    cmd: python src/model.py
+    deps:
+    - data/processed
+    - src/model.py
+    #params:
+    #- model_building.n_estimators
+    #- model_building.random_state
+    outs:
+    - models/model.pkl
+  model_evaluation:
+    cmd: python src/evaluation.py
+    deps:
+    - models/model.pkl
+    - src/evaluation.py
+    metrics:
+    - reports/metrics.json
+
