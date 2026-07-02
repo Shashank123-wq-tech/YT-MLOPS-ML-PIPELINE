@@ -1,0 +1,167 @@
+# ==========================
+# Core Scientific Computing
+# ==========================
+numpy
+pandas
+scipy
+
+# ==========================
+# Data Visualization
+# ==========================
+matplotlib
+seaborn
+plotly
+
+# ==========================
+# Machine Learning
+# ==========================
+scikit-learn
+xgboost
+lightgbm
+catboost
+imbalanced-learn
+
+# ==========================
+# Statistics
+# ==========================
+statsmodels
+
+# ==========================
+# Deep Learning
+# ==========================
+tensorflow
+keras
+torch
+torchvision
+torchaudio
+
+# ==========================
+# Natural Language Processing
+# ==========================
+nltk
+spacy
+gensim
+transformers
+datasets
+sentence-transformers
+accelerate
+tokenizers
+
+# ==========================
+# Computer Vision
+# ==========================
+opencv-python
+Pillow
+albumentations
+
+# ==========================
+# Jupyter Environment
+# ==========================
+jupyter
+jupyterlab
+notebook
+ipykernel
+
+# ==========================
+# Data Processing
+# ==========================
+openpyxl
+xlrd
+pyarrow
+fastparquet
+
+# ==========================
+# Model Explainability
+# ==========================
+shap
+lime
+
+# ==========================
+# Hyperparameter Tuning
+# ==========================
+optuna
+
+# ==========================
+# Experiment Tracking
+# ==========================
+mlflow
+wandb
+
+# ==========================
+# MLOps
+# ==========================
+dvc
+hydra-core
+omegaconf
+
+# ==========================
+# Web Frameworks
+# ==========================
+streamlit
+gradio
+flask
+fastapi
+uvicorn
+
+# ==========================
+# Database
+# ==========================
+sqlalchemy
+psycopg2-binary
+pymysql
+
+# ==========================
+# APIs
+# ==========================
+requests
+httpx
+
+# ==========================
+# Utilities
+# ==========================
+python-dotenv
+tqdm
+joblib
+PyYAML
+rich
+loguru
+
+# ==========================
+# Hugging Face
+# ==========================
+huggingface-hub
+evaluate
+safetensors
+
+# ==========================
+# PDF & Document Processing
+# ==========================
+pymupdf
+pdfplumber
+python-docx
+pypdf
+
+# ==========================
+# Web Scraping
+# ==========================
+beautifulsoup4
+lxml
+selenium
+scrapy
+
+# ==========================
+# Testing
+# ==========================
+pytest
+
+# ==========================
+# Code Formatting
+# ==========================
+black
+isort
+flake8
+
+# ==========================
+# Miscellaneous
+# ==========================
+ipython
