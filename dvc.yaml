@@ -11,8 +11,8 @@ stages:
     cmd: python src/data_injestion.py # cmd --> commands
     deps:
     - src/data_injestion.py            # deps --> dependencies
-    #params:
-    #- data_ingestion.test_size         # paramaters
+    params:
+    - data_ingestion.test_size         # paramaters
     outs:
     - data/raw                         # outs -- > output.
   data_preprocessing:
@@ -27,8 +27,8 @@ stages:
     deps:
     - data/interim
     - src/Feature_eng.py
-    #params:
-    #- feature_engineering.max_features
+    params:
+    - feature_engineering.max_features
     outs:
     - data/processed
   model_building:
@@ -36,9 +36,9 @@ stages:
     deps:
     - data/processed
     - src/model.py
-    #params:
-    #- model_building.n_estimators
-    #- model_building.random_state
+    params:
+    - model_building.n_estimators
+    - model_building.random_state
     outs:
     - models/model.pkl
   model_evaluation:
